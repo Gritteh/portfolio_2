@@ -7,7 +7,8 @@ $off_black: #1D1D1D;
 }
 body {
     color: $off_black;
-    font-family: Avenir;
+    // font-family: Avenir;
+    font-family: 'Poppins', sans-serif;
 }
 h1 {
     font-size: 2.5em;
@@ -15,6 +16,13 @@ h1 {
 }
 h2 {
     font-size: 2em;
+}
+@mixin icon() {
+}
+@mixin title() {
+    margin-top: 5%;
+    font-size: 3.5em;
+    text-align: center;
 }
 .main__container {
     .top__row {
@@ -37,6 +45,15 @@ h2 {
             @include mainSquare();
             // background-color: #7700FF;
             background-color: #C490FF;
+            .right__fork {
+                margin-left: 47%;
+                margin-top: 9%;
+            }
+            .right__title {
+                margin-top: 5%;
+                font-size: 3.5em;
+                text-align: center;
+            }
             
         }
     }
@@ -45,13 +62,25 @@ h2 {
             @include mainSquare();
             // background-color: #5500B6;
             background-color: #B97CFF;
-            
+            .left__coffee {
+                margin-left: 43%;
+                margin-top: 9%;
+            }
+            .left__title {
+                @include title();
+            }
         }
         .bottom__right {
             @include mainSquare();
             // background-color: #3019B1;
             background-color: #A55BFF;
-            
+            .right__mail {
+                margin-left: 43%;
+                margin-top: 9%;
+            }
+            .right__title {
+                @include title();
+            }
         }
     }
     
