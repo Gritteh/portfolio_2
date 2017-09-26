@@ -1,0 +1,58 @@
+$off_black: #1D1D1D;
+
+
+@mixin mainSquare() {
+    height: 50%;
+    padding: 20px 20px;
+}
+body {
+    color: $off_black;
+    font-family: Avenir;
+}
+h1 {
+    font-size: 2.5em;
+
+}
+h2 {
+    font-size: 2em;
+}
+.main__container {
+    .top__row {
+        .top__left {
+            @include mainSquare();
+            background-color: #D7B4FF;
+            
+            // background-color: #19199E;
+            .name__title {
+                margin-top: 20px;
+                text-align: right;
+            }
+            .name__subtitle {
+                margin-top: 30px;
+                text-align: right;
+                
+            }
+        }  
+        .top__right {
+            @include mainSquare();
+            // background-color: #7700FF;
+            background-color: #C490FF;
+            
+        }
+    }
+    .bottom__row {
+        .bottom__left {
+            @include mainSquare();
+            // background-color: #5500B6;
+            background-color: #B97CFF;
+            
+        }
+        .bottom__right {
+            @include mainSquare();
+            // background-color: #3019B1;
+            background-color: #A55BFF;
+            
+        }
+    }
+    
+}
