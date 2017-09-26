@@ -8,48 +8,72 @@ h1 {
 h2 {
   font-size: 2em; }
 
-.main__container .top__row .top__left {
-  height: 50%;
-  padding: 20px 20px;
-  background-color: #D7B4FF; }
-  .main__container .top__row .top__left .name__title {
-    margin-top: 20px;
-    text-align: right; }
-  .main__container .top__row .top__left .name__subtitle {
-    margin-top: 30px;
-    text-align: right; }
-.main__container .top__row .top__right {
-  height: 50%;
-  padding: 20px 20px;
-  background-color: #C490FF; }
-  .main__container .top__row .top__right .right__fork {
-    margin-left: 47%;
-    margin-top: 9%; }
-  .main__container .top__row .top__right .right__title {
-    margin-top: 5%;
-    font-size: 3.5em;
-    text-align: center; }
-.main__container .bottom__row .bottom__left {
-  height: 50%;
-  padding: 20px 20px;
-  background-color: #B97CFF; }
-  .main__container .bottom__row .bottom__left .left__coffee {
-    margin-left: 43%;
-    margin-top: 9%; }
-  .main__container .bottom__row .bottom__left .left__title {
-    margin-top: 5%;
-    font-size: 3.5em;
-    text-align: center; }
-.main__container .bottom__row .bottom__right {
-  height: 50%;
-  padding: 20px 20px;
-  background-color: #A55BFF; }
-  .main__container .bottom__row .bottom__right .right__mail {
-    margin-left: 43%;
-    margin-top: 9%; }
-  .main__container .bottom__row .bottom__right .right__title {
-    margin-top: 5%;
-    font-size: 3.5em;
-    text-align: center; }
+.row {
+  margin-left: auto;
+  margin-right: auto; }
+
+.main__container {
+  padding: 0; }
+  .main__container .top__row .top__left {
+    border: none;
+    height: 50vh;
+    padding: 20px 20px;
+    background-color: #D7B4FF; }
+    .main__container .top__row .top__left .name__title {
+      margin-top: 20px;
+      text-align: right;
+      font-size: 3.5em; }
+    .main__container .top__row .top__left .name__subtitle {
+      margin-top: 30px;
+      text-align: right;
+      font-size: 1.5em; }
+  .main__container .top__row .top__right {
+    border: none;
+    height: 50vh;
+    padding: 20px 20px;
+    background-color: #C490FF; }
+    .main__container .top__row .top__right:hover {
+      cursor: pointer;
+      border: 2px solid white;
+      padding: 18px 18px; }
+    .main__container .top__row .top__right .right__fork {
+      margin-left: 47%;
+      margin-top: 9%; }
+    .main__container .top__row .top__right .right__title {
+      margin-top: 5%;
+      font-size: 3.5em;
+      text-align: center; }
+  .main__container .bottom__row .bottom__left {
+    border: none;
+    height: 50vh;
+    padding: 20px 20px;
+    background-color: #B97CFF; }
+    .main__container .bottom__row .bottom__left:hover {
+      cursor: pointer;
+      border: 2px solid white;
+      padding: 18px 18px; }
+    .main__container .bottom__row .bottom__left .left__coffee {
+      margin-left: 43%;
+      margin-top: 9%; }
+    .main__container .bottom__row .bottom__left .left__title {
+      margin-top: 5%;
+      font-size: 3.5em;
+      text-align: center; }
+  .main__container .bottom__row .bottom__right {
+    border: none;
+    height: 50vh;
+    padding: 20px 20px;
+    background-color: #A55BFF; }
+    .main__container .bottom__row .bottom__right:hover {
+      cursor: pointer;
+      border: 2px solid white;
+      padding: 18px 18px; }
+    .main__container .bottom__row .bottom__right .right__mail {
+      margin-left: 43%;
+      margin-top: 9%; }
+    .main__container .bottom__row .bottom__right .right__title {
+      margin-top: 5%;
+      font-size: 3.5em;
+      text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
