@@ -1,0 +1,137 @@
+// Variables
+$off_black: #1D1D1D;
+$purple_lightest: #D7B4FF;
+$purple_second: #C490FF;
+$purple_third: #B97CFF;
+$purple_fourth: #A55BFF;
+
+
+body {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+@mixin navbutton() {
+    display: inline-block;
+    height: 10vh;
+    width: 24%;
+    background-color: $purple_fourth;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+@mixin navtext() {
+    padding: 3vh 0;
+    font-size: 1.5em;
+    text-align: center;
+    
+}
+// Header
+.header {
+    width: 100vw;
+    padding: 1vh 0;
+    background-color: $purple_second;
+    border-bottom: 1px solid white;
+
+    // Logo
+    .header__logo {
+        // position: absolute;
+        float: left;
+        margin-left: 5vw;
+        margin-top: 1vh;
+
+    }
+    // Navbar
+    
+    .nav {
+        display: block;
+        width: 60%;
+        // margin-left:auto;
+        // margin-right: auto;
+        margin: 0 auto;
+        // height: 90%;
+        .nav__home {
+            @include navbutton();
+            .home__text {
+                @include navtext();
+            }
+        }
+        .nav__work {
+            .work__text {
+                @include navtext();
+                
+            }
+            @include navbutton();
+        }
+        .nav__about {
+            .about__text {
+                @include navtext();
+                
+            }
+            @include navbutton();
+        }
+        .nav__contact {
+            .contact__text {
+                @include navtext();
+                
+            }
+            margin-right: auto;
+            @include navbutton();
+        }
+    }
+
+} // End of .header // 
+@mixin leftblocks() {
+    // width: 50vw;
+    padding: 0;
+    height: 40vh;
+    background-color: $off_black;
+    // border: 1px solid white;
+    border-bottom: none;
+}
+@mixin rightblocks() {
+    // width: 50vw;
+    padding: 0;
+    height: 40vh;
+    max-height: 40vh;
+    // border: 1px solid white;
+    border-top: none;
+    background-color: $off_black; 
+}
+@mixin subtitle() {
+    border-top: none;
+    height: 20%;
+    text-align: center;
+    padding-top: 4%;
+    font-size: 1em;
+}
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}
+main {
+    // Rows
+    .first__row, .second__row, .third__row {
+        // Left blocks
+        .first__left, .second__left, .third__left {
+            @include leftblocks();
+            
+            img { 
+                height: 80%;
+                width: 100%;
+            }
+            .subtitle {
+                @include subtitle();
+            }
+        }
+        // Right blocks
+        .first__right, .second__right, .third__right {
+            @include rightblocks();
+            img { 
+                height: 80%;
+                width: 100%;
+            }
+            .subtitle {
+                @include subtitle();
+            }
+        }
+    }
+}

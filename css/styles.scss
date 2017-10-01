@@ -1,5 +1,8 @@
 $off_black: #1D1D1D;
-
+$purple_lightest: #D7B4FF;
+$purple_second: #C490FF;
+$purple_third: #B97CFF;
+$purple_fourth: #A55BFF;
 
 @mixin mainSquare() {
     border: none;
@@ -46,7 +49,7 @@ h2 {
     .top__row {
         .top__left {
             @include mainSquare();
-            background-color: #D7B4FF;
+            background-color: $purple_lightest;
             
             .name__title {
                 margin-top: 20px;
@@ -62,7 +65,7 @@ h2 {
         }  
         .top__right {
             @include mainSquare();
-            background-color: #C490FF;
+            background-color: $purple_second;
             &:hover {
                 @include hover();
                 .right__fork {
@@ -87,7 +90,7 @@ h2 {
     .bottom__row {
         .bottom__left {
             @include mainSquare();
-            background-color: #B97CFF;
+            background-color: $purple_third;
             &:hover {
                 @include hover();
                 .left__coffee {
@@ -105,7 +108,7 @@ h2 {
         }
         .bottom__right {
             @include mainSquare();
-            background-color: #A55BFF;
+            background-color: $purple_fourth;
             &:hover {
                 @include hover();
                 .right__mail {

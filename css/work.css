@@ -1,0 +1,98 @@
+body {
+  color: white;
+  font-family: 'Poppins', sans-serif; }
+
+.header {
+  width: 100vw;
+  padding: 1vh 0;
+  background-color: #C490FF;
+  border-bottom: 1px solid white; }
+  .header .header__logo {
+    float: left;
+    margin-left: 5vw;
+    margin-top: 1vh; }
+  .header .nav {
+    display: block;
+    width: 60%;
+    margin: 0 auto; }
+    .header .nav .nav__home {
+      display: inline-block;
+      height: 10vh;
+      width: 24%;
+      background-color: #A55BFF;
+      border-radius: 5px;
+      border: 1px solid white; }
+      .header .nav .nav__home .home__text {
+        padding: 3vh 0;
+        font-size: 1.5em;
+        text-align: center; }
+    .header .nav .nav__work {
+      display: inline-block;
+      height: 10vh;
+      width: 24%;
+      background-color: #A55BFF;
+      border-radius: 5px;
+      border: 1px solid white; }
+      .header .nav .nav__work .work__text {
+        padding: 3vh 0;
+        font-size: 1.5em;
+        text-align: center; }
+    .header .nav .nav__about {
+      display: inline-block;
+      height: 10vh;
+      width: 24%;
+      background-color: #A55BFF;
+      border-radius: 5px;
+      border: 1px solid white; }
+      .header .nav .nav__about .about__text {
+        padding: 3vh 0;
+        font-size: 1.5em;
+        text-align: center; }
+    .header .nav .nav__contact {
+      margin-right: auto;
+      display: inline-block;
+      height: 10vh;
+      width: 24%;
+      background-color: #A55BFF;
+      border-radius: 5px;
+      border: 1px solid white; }
+      .header .nav .nav__contact .contact__text {
+        padding: 3vh 0;
+        font-size: 1.5em;
+        text-align: center; }
+
+.row {
+  margin-left: auto;
+  margin-right: auto; }
+
+main .first__row .first__left, main .first__row .second__left, main .first__row .third__left, main .second__row .first__left, main .second__row .second__left, main .second__row .third__left, main .third__row .first__left, main .third__row .second__left, main .third__row .third__left {
+  padding: 0;
+  height: 40vh;
+  background-color: #1D1D1D;
+  border-bottom: none; }
+  main .first__row .first__left img, main .first__row .second__left img, main .first__row .third__left img, main .second__row .first__left img, main .second__row .second__left img, main .second__row .third__left img, main .third__row .first__left img, main .third__row .second__left img, main .third__row .third__left img {
+    height: 80%;
+    width: 100%; }
+  main .first__row .first__left .subtitle, main .first__row .second__left .subtitle, main .first__row .third__left .subtitle, main .second__row .first__left .subtitle, main .second__row .second__left .subtitle, main .second__row .third__left .subtitle, main .third__row .first__left .subtitle, main .third__row .second__left .subtitle, main .third__row .third__left .subtitle {
+    border-top: none;
+    height: 20%;
+    text-align: center;
+    padding-top: 4%;
+    font-size: 1em; }
+main .first__row .first__right, main .first__row .second__right, main .first__row .third__right, main .second__row .first__right, main .second__row .second__right, main .second__row .third__right, main .third__row .first__right, main .third__row .second__right, main .third__row .third__right {
+  padding: 0;
+  height: 40vh;
+  max-height: 40vh;
+  border-top: none;
+  background-color: #1D1D1D; }
+  main .first__row .first__right img, main .first__row .second__right img, main .first__row .third__right img, main .second__row .first__right img, main .second__row .second__right img, main .second__row .third__right img, main .third__row .first__right img, main .third__row .second__right img, main .third__row .third__right img {
+    height: 80%;
+    width: 100%; }
+  main .first__row .first__right .subtitle, main .first__row .second__right .subtitle, main .first__row .third__right .subtitle, main .second__row .first__right .subtitle, main .second__row .second__right .subtitle, main .second__row .third__right .subtitle, main .third__row .first__right .subtitle, main .third__row .second__right .subtitle, main .third__row .third__right .subtitle {
+    border-top: none;
+    height: 20%;
+    text-align: center;
+    padding-top: 4%;
+    font-size: 1em; }
+
+/*# sourceMappingURL=work.css.map */
