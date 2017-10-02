@@ -129,6 +129,40 @@ body {
         }
     }
 
+    // MOBILE MENU
+    .mobile__nav {
+        @media (min-width: 650px) {
+            display: none;
+        }
+        .mob__icon {
+            position: absolute;
+            right: 8vw;
+            top: 1.5vh;
+            color: white;
+        }
+                
+        .mob__links {
+            position: absolute;
+            right: 8vw;
+            top: 12vh;
+            display: block;
+            width: 30vw;
+            background-color: $purple_darkest;
+            a {
+                position: relative;
+                display: inline-block;
+                color: white;
+                width: 30vw;
+                height: 5vh;
+                font-size: 1.5em;
+                text-align: right;
+                // border: 1px solid white;
+                
+            }
+        }
+    }
+    
+
 } // End of .header // 
 
 .main {

@@ -17,6 +17,9 @@ body {
     @media (max-width: 740px) {
       .header .header__logo {
         margin-left: 3vw; } }
+  @media (max-width: 650px) {
+    .header .nav {
+      display: none; } }
   .header .nav .nav__home, .header .nav .nav__work, .header .nav .nav__about, .header .nav .nav__contact {
     text-decoration: none; }
     .header .nav .nav__home .active, .header .nav .nav__work .active, .header .nav .nav__about .active, .header .nav .nav__contact .active {
@@ -111,6 +114,29 @@ body {
         .header .nav .nav__contact .contact__text {
           font-size: 1.2em;
           margin-top: 0.5vh; } }
+  @media (min-width: 650px) {
+    .header .mobile__nav {
+      display: none; } }
+  .header .mobile__nav .mob__icon {
+    position: absolute;
+    right: 8vw;
+    top: 1.5vh;
+    color: white; }
+  .header .mobile__nav .mob__links {
+    position: absolute;
+    right: 8vw;
+    top: 12vh;
+    display: block;
+    width: 30vw;
+    background-color: #260252; }
+    .header .mobile__nav .mob__links a {
+      position: relative;
+      display: inline-block;
+      color: white;
+      width: 30vw;
+      height: 5vh;
+      font-size: 1.5em;
+      text-align: right; }
 
 .main {
   width: 100vw;
