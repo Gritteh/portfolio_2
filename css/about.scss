@@ -6,6 +6,15 @@ $purple_third: #B97CFF;
 $purple_fourth: #A55BFF;
 $purple_darkest: #260252;
 
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+.col-8, .col-4 {
+    padding: 0;
+    margin: 0;
+}
 
 body {
     height: 100vh;
@@ -115,112 +124,56 @@ body {
     }
 
 } // End of .header // 
-@mixin block() {
-    // padding: 4vh 2vw;
-    padding: 30px 20px;
-    width: 50vw;
-    height: 44vh;
-}
-@mixin blockTitle() {
-    margin-bottom: 3vh;
-    font-size: 3em;
-    text-align: center;
-}
-@mixin blockText() {
-    text-align: center;
-    line-height: 2em;
-}
-@mixin socialimage() {
-    height: 20vh;
-    margin: 0 auto;
-    // margin-top: 1vh;
-    margin-bottom: 3vh;
-    border-radius: 50%;
-}
-@mixin hover() {
-    &:hover {
-        cursor: pointer;
-        padding: 28px 18px;
-        border: 2px solid white;
-        color: white;
-    }
-}
+
 .main {
-    width: 100vw;
-    height: 88vh;
-    background-color: $purple_fourth;
     .boss__row {
-
-        .email__section, .linkedin__section, .twitter__section, .github__section {
-            @include block();
-        }
-
-        .email__section { 
+        .top__row {
+            height: 44vh;
             background-color: $purple_lightest;
-            .email__title {
-                @include blockTitle();
-            }
-            .email__text {
-                @include blockText();
-                font-size: 1em;
-            }
-        }
         
-        .linkedin__section {
-            @include hover();
-            background-color: $purple_second;
-            .linkedin__title {
-                @include blockTitle();
-            }
-            .linkedin__text {
-                @include blockText();
-            }
             .image__container {
-                .linkedin__image {
-                    @include socialimage();
-                    // border: 1px solid black;
-    
+                width: 100%;
+                padding: 5vh 5vw;
+                overflow: hidden;
+                .top__image {
+                    margin: 0 auto;
+                    width: 100%;
+                    max-width: 100%;
+                    max-height: 100%;
+                    border-radius: 10px;
+                    
                 }
             }
             
-        }
-
-        .twitter__section {
-            @include hover();
-            background-color: $purple_third;
-            .twitter__title {
-                @include blockTitle();
-            }
-            .twitter__text {
-                @include blockText();
-            }
-            .image__container {
-                .twitter__image {
-                   @include socialimage();
+            .top__title {
+                padding: 4vh 3vw;
+                margin-top: 4vh;
+                font-size: 3em;
+                p {
+                    margin-top: 5vh;
+                    font-size: 1.5rem;
                 }
             }
         }
 
-        .github__section {
-            @include hover();
-            background-color: $purple_fourth;
-            .github__title {
-                @include blockTitle();
-            }
-            .github__text {
-                @include blockText();
-            }
-            .image__container {
-                .github__image {
-                    @include socialimage();
+        .bottom__row {
+            height: 44vh;
+            background-color: $purple_second;
+            padding: 4vh 5vw;
+            .bottom__text {
+                width: 100%;
+                text-align: center;
+                line-height: 6vh;
+                font-size: 1.2em;
+                p {
+                    margin-top: 3vh;
+                    font-size: 1rem;
+                    a {
+                        text-decoration: none;
+                        color: #00695c;
+                    }
                 }
             }
         }
     }
-    
-    
-}
-.row {
-    margin-left: auto;
-    margin-right: auto;
 }

@@ -1,3 +1,12 @@
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0; }
+
+.col-8, .col-4 {
+  padding: 0;
+  margin: 0; }
+
 body {
   height: 100vh;
   color: #1D1D1D;
@@ -85,84 +94,40 @@ body {
       text-align: center;
       color: #1D1D1D; }
 
-.main {
-  width: 100vw;
-  height: 88vh;
-  background-color: #A55BFF; }
-  .main .boss__row .email__section, .main .boss__row .linkedin__section, .main .boss__row .twitter__section, .main .boss__row .github__section {
-    padding: 30px 20px;
-    width: 50vw;
-    height: 44vh; }
-  .main .boss__row .email__section {
-    background-color: #D7B4FF; }
-    .main .boss__row .email__section .email__title {
-      margin-bottom: 3vh;
-      font-size: 3em;
-      text-align: center; }
-    .main .boss__row .email__section .email__text {
-      text-align: center;
-      line-height: 2em;
-      font-size: 1em; }
-  .main .boss__row .linkedin__section {
-    background-color: #C490FF; }
-    .main .boss__row .linkedin__section:hover {
-      cursor: pointer;
-      padding: 28px 18px;
-      border: 2px solid white;
-      color: white; }
-    .main .boss__row .linkedin__section .linkedin__title {
-      margin-bottom: 3vh;
-      font-size: 3em;
-      text-align: center; }
-    .main .boss__row .linkedin__section .linkedin__text {
-      text-align: center;
-      line-height: 2em; }
-    .main .boss__row .linkedin__section .image__container .linkedin__image {
-      height: 20vh;
+.main .boss__row .top__row {
+  height: 44vh;
+  background-color: #D7B4FF; }
+  .main .boss__row .top__row .image__container {
+    width: 100%;
+    padding: 5vh 5vw;
+    overflow: hidden; }
+    .main .boss__row .top__row .image__container .top__image {
       margin: 0 auto;
-      margin-bottom: 3vh;
-      border-radius: 50%; }
-  .main .boss__row .twitter__section {
-    background-color: #B97CFF; }
-    .main .boss__row .twitter__section:hover {
-      cursor: pointer;
-      padding: 28px 18px;
-      border: 2px solid white;
-      color: white; }
-    .main .boss__row .twitter__section .twitter__title {
-      margin-bottom: 3vh;
-      font-size: 3em;
-      text-align: center; }
-    .main .boss__row .twitter__section .twitter__text {
-      text-align: center;
-      line-height: 2em; }
-    .main .boss__row .twitter__section .image__container .twitter__image {
-      height: 20vh;
-      margin: 0 auto;
-      margin-bottom: 3vh;
-      border-radius: 50%; }
-  .main .boss__row .github__section {
-    background-color: #A55BFF; }
-    .main .boss__row .github__section:hover {
-      cursor: pointer;
-      padding: 28px 18px;
-      border: 2px solid white;
-      color: white; }
-    .main .boss__row .github__section .github__title {
-      margin-bottom: 3vh;
-      font-size: 3em;
-      text-align: center; }
-    .main .boss__row .github__section .github__text {
-      text-align: center;
-      line-height: 2em; }
-    .main .boss__row .github__section .image__container .github__image {
-      height: 20vh;
-      margin: 0 auto;
-      margin-bottom: 3vh;
-      border-radius: 50%; }
+      width: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 10px; }
+  .main .boss__row .top__row .top__title {
+    padding: 4vh 3vw;
+    margin-top: 4vh;
+    font-size: 3em; }
+    .main .boss__row .top__row .top__title p {
+      margin-top: 5vh;
+      font-size: 1.5rem; }
+.main .boss__row .bottom__row {
+  height: 44vh;
+  background-color: #C490FF;
+  padding: 4vh 5vw; }
+  .main .boss__row .bottom__row .bottom__text {
+    width: 100%;
+    text-align: center;
+    line-height: 6vh;
+    font-size: 1.2em; }
+    .main .boss__row .bottom__row .bottom__text p {
+      margin-top: 3vh;
+      font-size: 1rem; }
+      .main .boss__row .bottom__row .bottom__text p a {
+        text-decoration: none;
+        color: #00695c; }
 
-.row {
-  margin-left: auto;
-  margin-right: auto; }
-
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=about.css.map */
