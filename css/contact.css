@@ -14,17 +14,21 @@ body {
     float: left;
     margin-left: 5vw;
     color: white; }
-  .header .nav .nav__home .active, .header .nav .nav__work .active, .header .nav .nav__about .active, .header .nav .nav__contact .active {
-    color: white !important; }
+  .header .nav .nav__home, .header .nav .nav__work, .header .nav .nav__about, .header .nav .nav__contact {
+    text-decoration: none; }
+    .header .nav .nav__home .active, .header .nav .nav__work .active, .header .nav .nav__about .active, .header .nav .nav__contact .active {
+      color: white !important; }
   .header .nav .nav__home {
     display: inline;
     background-color: #C490FF;
     border: 2px solid #1D1D1D;
     border-right: 1px solid #1D1D1D; }
+    .header .nav .nav__home p a {
+      color: #1D1D1D; }
     .header .nav .nav__home:hover {
       cursor: pointer; }
       .header .nav .nav__home:hover p {
-        color: white !important; }
+        color: white; }
     .header .nav .nav__home .home__text {
       padding: 1.5vh 0;
       font-size: 1.5em;
@@ -35,10 +39,12 @@ body {
     background-color: #C490FF;
     border: 2px solid #1D1D1D;
     border-right: 1px solid #1D1D1D; }
+    .header .nav .nav__work p a {
+      color: #1D1D1D; }
     .header .nav .nav__work:hover {
       cursor: pointer; }
       .header .nav .nav__work:hover p {
-        color: white !important; }
+        color: white; }
     .header .nav .nav__work .work__text {
       padding: 1.5vh 0;
       font-size: 1.5em;
@@ -49,10 +55,12 @@ body {
     background-color: #C490FF;
     border: 2px solid #1D1D1D;
     border-right: 1px solid #1D1D1D; }
+    .header .nav .nav__about p a {
+      color: #1D1D1D; }
     .header .nav .nav__about:hover {
       cursor: pointer; }
       .header .nav .nav__about:hover p {
-        color: white !important; }
+        color: white; }
     .header .nav .nav__about .about__text {
       padding: 1.5vh 0;
       font-size: 1.5em;
@@ -65,10 +73,12 @@ body {
     border: 2px solid #1D1D1D;
     border-right: 1px solid #1D1D1D;
     border-right: 2px solid #1D1D1D; }
+    .header .nav .nav__contact p a {
+      color: #1D1D1D; }
     .header .nav .nav__contact:hover {
       cursor: pointer; }
       .header .nav .nav__contact:hover p {
-        color: white !important; }
+        color: white; }
     .header .nav .nav__contact .contact__text {
       padding: 1.5vh 0;
       font-size: 1.5em;

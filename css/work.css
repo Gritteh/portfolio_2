@@ -14,8 +14,10 @@ body {
     float: left;
     margin-left: 5vw;
     margin-top: 0.5vh; }
-  .header .nav .nav__home .active, .header .nav .nav__work .active, .header .nav .nav__about .active, .header .nav .nav__contact .active {
-    color: white !important; }
+  .header .nav .nav__home, .header .nav .nav__work, .header .nav .nav__about, .header .nav .nav__contact {
+    text-decoration: none; }
+    .header .nav .nav__home .active, .header .nav .nav__work .active, .header .nav .nav__about .active, .header .nav .nav__contact .active {
+      color: white !important; }
   .header .nav .nav__home {
     display: inline;
     background-color: #C490FF;

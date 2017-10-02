@@ -17,7 +17,11 @@ body {
     background-color: $purple_second;
     border: 2px solid $off_black;
     border-right: 1px solid $off_black;
-    
+    p {
+        a {
+            color: $off_black;
+        }
+    }
 }
 @mixin navtext() {
     padding: 1.5vh 0;
@@ -29,7 +33,7 @@ body {
 @mixin navwhite() {
     cursor: pointer;
     p {
-        color: white !important;
+        color: white;
     }
 }
 @mixin pointer() {
@@ -55,6 +59,7 @@ body {
     
     .nav {
         .nav__home, .nav__work, .nav__about, .nav__contact {
+            text-decoration: none;
             .active {
                 color: white !important;
             }

@@ -55,6 +55,7 @@ body {
     
     .nav {
         .nav__home, .nav__work, .nav__about, .nav__contact {
+            text-decoration: none;
             .active {
                 color: white !important;
             }
