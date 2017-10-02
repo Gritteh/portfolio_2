@@ -17,6 +17,7 @@ h2 {
   .main__container .top__row .top__left {
     border: none;
     height: 50vh;
+    width: 50vw;
     padding: 20px 20px;
     background-color: #D7B4FF; }
     .main__container .top__row .top__left .name__title {
@@ -30,6 +31,7 @@ h2 {
   .main__container .top__row .top__right {
     border: none;
     height: 50vh;
+    width: 50vw;
     padding: 20px 20px;
     background-color: #C490FF; }
     .main__container .top__row .top__right:hover {
@@ -41,8 +43,14 @@ h2 {
         transition: all 0.6s ease;
         transform: translateY(-10px); }
     .main__container .top__row .top__right .right__fork {
-      margin-left: 47%;
-      margin-top: 9%; }
+      margin-left: 22vw;
+      margin-top: 10vh; }
+      @media (max-width: 767px) {
+        .main__container .top__row .top__right .right__fork {
+          margin-left: 45vw; } }
+      @media (max-width: 630px) {
+        .main__container .top__row .top__right .right__fork {
+          margin-left: 44vw; } }
     .main__container .top__row .top__right .right__title {
       margin-top: 5%;
       font-size: 3.5em;
@@ -50,6 +58,7 @@ h2 {
   .main__container .bottom__row .bottom__left {
     border: none;
     height: 50vh;
+    width: 50vw;
     padding: 20px 20px;
     background-color: #B97CFF; }
     .main__container .bottom__row .bottom__left:hover {
@@ -61,15 +70,25 @@ h2 {
         transition: all 0.6s ease;
         transform: translateY(-10px); }
     .main__container .bottom__row .bottom__left .left__coffee {
-      margin-left: 43%;
-      margin-top: 9%; }
+      margin-left: 20vw;
+      margin-top: 10vh; }
+      @media (max-width: 767px) {
+        .main__container .bottom__row .bottom__left .left__coffee {
+          margin-left: 43vw; } }
+      @media (max-width: 650px) {
+        .main__container .bottom__row .bottom__left .left__coffee {
+          margin-left: 40vw; } }
+      @media (min-width: 1200px) {
+        .main__container .bottom__row .bottom__left .left__coffee {
+          margin-left: 21vw; } }
     .main__container .bottom__row .bottom__left .left__title {
-      margin-top: 5%;
+      margin-top: 5vh;
       font-size: 3.5em;
       text-align: center; }
   .main__container .bottom__row .bottom__right {
     border: none;
     height: 50vh;
+    width: 50vw;
     padding: 20px 20px;
     background-color: #A55BFF; }
     .main__container .bottom__row .bottom__right:hover {
@@ -81,10 +100,19 @@ h2 {
         transition: all 0.6s ease;
         transform: translateY(-10px); }
     .main__container .bottom__row .bottom__right .right__mail {
-      margin-left: 43%;
-      margin-top: 9%; }
+      margin-left: 20vw;
+      margin-top: 10vh; }
+      @media (max-width: 767px) {
+        .main__container .bottom__row .bottom__right .right__mail {
+          margin-left: 43vw; } }
+      @media (max-width: 650px) {
+        .main__container .bottom__row .bottom__right .right__mail {
+          margin-left: 40vw; } }
+      @media (min-width: 1200px) {
+        .main__container .bottom__row .bottom__right .right__mail {
+          margin-left: 21vw; } }
     .main__container .bottom__row .bottom__right .right__title {
-      margin-top: 5%;
+      margin-top: 5vh;
       font-size: 3.5em;
       text-align: center; }
 
