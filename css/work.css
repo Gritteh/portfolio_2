@@ -14,11 +14,16 @@ body {
     float: left;
     margin-left: 5vw;
     margin-top: 0.5vh; }
+    @media (max-width: 740px) {
+      .header .header__logo {
+        margin-left: 3vw; } }
   .header .nav .nav__home, .header .nav .nav__work, .header .nav .nav__about, .header .nav .nav__contact {
     text-decoration: none; }
     .header .nav .nav__home .active, .header .nav .nav__work .active, .header .nav .nav__about .active, .header .nav .nav__contact .active {
       color: white !important; }
   .header .nav .nav__home {
+    height: 7vh;
+    width: 10vw;
     display: inline;
     background-color: #C490FF;
     border: 2px solid #1D1D1D;
@@ -32,7 +37,13 @@ body {
       font-size: 1.5em;
       text-align: center;
       color: #1D1D1D; }
+      @media (max-width: 740px) {
+        .header .nav .nav__home .home__text {
+          font-size: 1.2em;
+          margin-top: 0.5vh; } }
   .header .nav .nav__work {
+    height: 7vh;
+    width: 10vw;
     display: inline;
     background-color: #C490FF;
     border: 2px solid #1D1D1D;
@@ -46,7 +57,13 @@ body {
       font-size: 1.5em;
       text-align: center;
       color: #1D1D1D; }
+      @media (max-width: 740px) {
+        .header .nav .nav__work .work__text {
+          font-size: 1.2em;
+          margin-top: 0.5vh; } }
   .header .nav .nav__about {
+    height: 7vh;
+    width: 10vw;
     display: inline;
     background-color: #C490FF;
     border: 2px solid #1D1D1D;
@@ -60,8 +77,14 @@ body {
       font-size: 1.5em;
       text-align: center;
       color: #1D1D1D; }
+      @media (max-width: 740px) {
+        .header .nav .nav__about .about__text {
+          font-size: 1.2em;
+          margin-top: 0.5vh; } }
   .header .nav .nav__contact {
     margin-right: auto;
+    height: 7vh;
+    width: 10vw;
     display: inline;
     background-color: #C490FF;
     border: 2px solid #1D1D1D;
@@ -76,6 +99,10 @@ body {
       font-size: 1.5em;
       text-align: center;
       color: #1D1D1D; }
+      @media (max-width: 740px) {
+        .header .nav .nav__contact .contact__text {
+          font-size: 1.2em;
+          margin-top: 0.5vh; } }
 
 .row {
   margin-left: auto;
@@ -91,7 +118,7 @@ main .boss__row {
   background-color: #260252; }
   main .boss__row .first__left, main .boss__row .second__left, main .boss__row .third__left {
     cursor: pointer;
-    border: 2px solid #1D1D1D; }
+    border: 2px solid #260252; }
     main .boss__row .first__left:hover, main .boss__row .second__left:hover, main .boss__row .third__left:hover {
       border: 2px solid white; }
     main .boss__row .first__left .dark__1 img, main .boss__row .first__left .dark__3 img, main .boss__row .second__left .dark__1 img, main .boss__row .second__left .dark__3 img, main .boss__row .third__left .dark__1 img, main .boss__row .third__left .dark__3 img {
@@ -105,7 +132,7 @@ main .boss__row {
       background-color: #260252; }
   main .boss__row .first__right, main .boss__row .second__right, main .boss__row .third__right {
     cursor: pointer;
-    border: 2px solid #1D1D1D; }
+    border: 2px solid #260252; }
     main .boss__row .first__right:hover, main .boss__row .second__right:hover, main .boss__row .third__right:hover {
       border: 2px solid white; }
     main .boss__row .first__right .dark__2 img, main .boss__row .first__right .dark__4 img, main .boss__row .second__right .dark__2 img, main .boss__row .second__right .dark__4 img, main .boss__row .third__right .dark__2 img, main .boss__row .third__right .dark__4 img {

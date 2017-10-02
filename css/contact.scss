@@ -13,6 +13,8 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 @mixin navbutton() {
+    height: 7vh;
+    width: 10vw;
     display: inline;
     background-color: $purple_second;
     border: 2px solid $off_black;
@@ -28,7 +30,10 @@ body {
     font-size: 1.5em;
     text-align: center;
     color: $off_black;
-    
+    @media (max-width: 740px) {
+        font-size: 1.2em;
+        margin-top: 0.5vh;
+    }
 }
 @mixin navwhite() {
     cursor: pointer;
@@ -53,7 +58,9 @@ body {
         float: left;
         margin-left: 5vw;
         color: white;
-
+        @media (max-width: 740px) {
+            margin-left: 3vw;
+        }
     }
     // Navbar
     
