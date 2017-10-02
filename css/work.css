@@ -130,6 +130,7 @@ main .boss__row {
     background-color: transparent;
     padding: 2vh 5vw; }
     .options .options_live:hover {
+      text-decoration: none;
       border-color: #C490FF;
       color: #C490FF; }
   .options .options_git {
@@ -140,6 +141,7 @@ main .boss__row {
     background-color: transparent;
     padding: 2vh 5vw; }
     .options .options_git:hover {
+      text-decoration: none;
       border-color: #C490FF;
       color: #C490FF; }
 

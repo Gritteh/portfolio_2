@@ -1,0 +1,209 @@
+// Variables
+$off_black: #1D1D1D;
+$purple_lightest: #D7B4FF;
+$purple_second: #C490FF;
+$purple_third: #B97CFF;
+$purple_fourth: #A55BFF;
+$purple_darkest: #260252;
+
+
+body {
+    height: 100vh;
+    color: $off_black;
+    font-family: 'Poppins', sans-serif;
+}
+@mixin navbutton() {
+    display: inline;
+    background-color: $purple_second;
+    border: 2px solid $off_black;
+    border-right: 1px solid $off_black;
+    
+}
+@mixin navtext() {
+    padding: 1.5vh 0;
+    font-size: 1.5em;
+    text-align: center;
+    color: $off_black;
+    
+}
+@mixin navwhite() {
+    cursor: pointer;
+    p {
+        color: white !important;
+    }
+}
+@mixin pointer() {
+    cursor: pointer;
+}
+// Header
+.header {
+    width: 100vw;
+    height: 12vh;
+    padding: 1vh 0;
+    box-sizing: border-box;
+    background-color: $purple_darkest;
+
+    // Logo
+    .header__logo {
+        position: absolute;
+        float: left;
+        margin-left: 5vw;
+        color: white;
+
+    }
+    // Navbar
+    
+    .nav {
+        .nav__home, .nav__work, .nav__about, .nav__contact {
+            .active {
+                color: white !important;
+            }
+        }
+       
+        .nav__home {
+            @include navbutton();
+            &:hover {
+                @include navwhite();
+            }
+            .home__text {
+                @include navtext();
+            }
+        }
+        .nav__work {
+            @include navbutton();
+            
+            &:hover {
+                @include navwhite();
+            }
+            .work__text {
+                @include navtext();
+                
+            }
+        }
+        .nav__about {
+            @include navbutton();
+            
+            &:hover {
+                @include navwhite();
+            }
+            .about__text {
+                @include navtext();
+                
+            }
+        }
+        .nav__contact {
+            margin-right: auto;
+            @include navbutton();
+            border-right: 2px solid $off_black;
+
+            &:hover {
+                @include navwhite();
+               
+            }
+            .contact__text {
+            
+                @include navtext();
+                
+            }
+            
+        }
+    }
+
+} // End of .header // 
+@mixin block() {
+    padding: 4vh 2vw;
+    width: 50vw;
+    height: 44vh;
+}
+@mixin blockTitle() {
+    margin-bottom: 3vh;
+    font-size: 3em;
+    text-align: center;
+}
+@mixin blockText() {
+    text-align: center;
+    line-height: 2em;
+}
+@mixin socialimage() {
+    height: 20vh;
+    margin: 0 auto;
+    // margin-top: 1vh;
+    margin-bottom: 3vh;
+    border-radius: 50%;
+}
+.main {
+    width: 100vw;
+    height: 88vh;
+    background-color: $purple_fourth;
+    .boss_row {
+
+        .email__section, .linkedin__section, .twitter__section, .github__section {
+            @include block();
+        }
+
+        .email__section { 
+            background-color: $purple_lightest;
+            .email__title {
+                @include blockTitle();
+            }
+            .email__text {
+                @include blockText();
+                font-size: 1em;
+            }
+        }
+
+        .linkedin__section {
+            background-color: $purple_second;
+            .linkedin__title {
+                @include blockTitle();
+            }
+            .linkedin__text {
+                @include blockText();
+            }
+            .image__container {
+                .linkedin__image {
+                    @include socialimage();
+                    // border: 1px solid black;
+    
+                }
+            }
+            
+        }
+
+        .twitter__section {
+            background-color: $purple_third;
+            .twitter__title {
+                @include blockTitle();
+            }
+            .twitter__text {
+                @include blockText();
+            }
+            .image__container {
+                .twitter__image {
+                   @include socialimage();
+                }
+            }
+        }
+
+        .github__section {
+            background-color: $purple_fourth;
+            .github__title {
+                @include blockTitle();
+            }
+            .github__text {
+                @include blockText();
+            }
+            .image__container {
+                .github__image {
+                    @include socialimage();
+                }
+            }
+        }
+    }
+    
+    
+}
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}

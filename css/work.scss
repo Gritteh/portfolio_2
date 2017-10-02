@@ -14,9 +14,7 @@ body {
 }
 @mixin navbutton() {
     display: inline;
-    // background-color: $purple_fourth;
     background-color: $purple_second;
-    // border-radius: 5px;
     border: 2px solid $off_black;
     border-right: 1px solid $off_black;
     
@@ -43,9 +41,7 @@ body {
     height: 12vh;
     padding: 1vh 0;
     box-sizing: border-box;
-    // background-color: $purple_second;
     background-color: $purple_darkest;
-    // border-bottom: 1px solid $off_black;
 
     // Logo
     .header__logo {
@@ -119,7 +115,6 @@ body {
 // Main //
 
 @mixin blocks() {
-    // width: 50vw;
     padding: 0;
     height: 44vh;
     box-sizing:  border-box;
@@ -143,7 +138,6 @@ body {
 
 // js class
 .clicked {
-    // background-color: rgba(255,255,255,0.4) !important;
     filter: brightness(50%);
 }
 // end
@@ -202,10 +196,10 @@ main {
     }
 }
 
+
 // click display
 @mixin hoverTurnTeal() {
-    // border-color: #4db6ac;
-    // color: #4db6ac;
+    text-decoration: none;
     border-color: $purple_second;
     color: $purple_second;
 }

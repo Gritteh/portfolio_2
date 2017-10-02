@@ -1,0 +1,143 @@
+body {
+  height: 100vh;
+  color: #1D1D1D;
+  font-family: 'Poppins', sans-serif; }
+
+.header {
+  width: 100vw;
+  height: 12vh;
+  padding: 1vh 0;
+  box-sizing: border-box;
+  background-color: #260252; }
+  .header .header__logo {
+    position: absolute;
+    float: left;
+    margin-left: 5vw;
+    color: white; }
+  .header .nav .nav__home .active, .header .nav .nav__work .active, .header .nav .nav__about .active, .header .nav .nav__contact .active {
+    color: white !important; }
+  .header .nav .nav__home {
+    display: inline;
+    background-color: #C490FF;
+    border: 2px solid #1D1D1D;
+    border-right: 1px solid #1D1D1D; }
+    .header .nav .nav__home:hover {
+      cursor: pointer; }
+      .header .nav .nav__home:hover p {
+        color: white !important; }
+    .header .nav .nav__home .home__text {
+      padding: 1.5vh 0;
+      font-size: 1.5em;
+      text-align: center;
+      color: #1D1D1D; }
+  .header .nav .nav__work {
+    display: inline;
+    background-color: #C490FF;
+    border: 2px solid #1D1D1D;
+    border-right: 1px solid #1D1D1D; }
+    .header .nav .nav__work:hover {
+      cursor: pointer; }
+      .header .nav .nav__work:hover p {
+        color: white !important; }
+    .header .nav .nav__work .work__text {
+      padding: 1.5vh 0;
+      font-size: 1.5em;
+      text-align: center;
+      color: #1D1D1D; }
+  .header .nav .nav__about {
+    display: inline;
+    background-color: #C490FF;
+    border: 2px solid #1D1D1D;
+    border-right: 1px solid #1D1D1D; }
+    .header .nav .nav__about:hover {
+      cursor: pointer; }
+      .header .nav .nav__about:hover p {
+        color: white !important; }
+    .header .nav .nav__about .about__text {
+      padding: 1.5vh 0;
+      font-size: 1.5em;
+      text-align: center;
+      color: #1D1D1D; }
+  .header .nav .nav__contact {
+    margin-right: auto;
+    display: inline;
+    background-color: #C490FF;
+    border: 2px solid #1D1D1D;
+    border-right: 1px solid #1D1D1D;
+    border-right: 2px solid #1D1D1D; }
+    .header .nav .nav__contact:hover {
+      cursor: pointer; }
+      .header .nav .nav__contact:hover p {
+        color: white !important; }
+    .header .nav .nav__contact .contact__text {
+      padding: 1.5vh 0;
+      font-size: 1.5em;
+      text-align: center;
+      color: #1D1D1D; }
+
+.main {
+  width: 100vw;
+  height: 88vh;
+  background-color: #A55BFF; }
+  .main .boss_row .email__section, .main .boss_row .linkedin__section, .main .boss_row .twitter__section, .main .boss_row .github__section {
+    padding: 4vh 2vw;
+    width: 50vw;
+    height: 44vh; }
+  .main .boss_row .email__section {
+    background-color: #D7B4FF; }
+    .main .boss_row .email__section .email__title {
+      margin-bottom: 3vh;
+      font-size: 3em;
+      text-align: center; }
+    .main .boss_row .email__section .email__text {
+      text-align: center;
+      line-height: 2em;
+      font-size: 1em; }
+  .main .boss_row .linkedin__section {
+    background-color: #C490FF; }
+    .main .boss_row .linkedin__section .linkedin__title {
+      margin-bottom: 3vh;
+      font-size: 3em;
+      text-align: center; }
+    .main .boss_row .linkedin__section .linkedin__text {
+      text-align: center;
+      line-height: 2em; }
+    .main .boss_row .linkedin__section .image__container .linkedin__image {
+      height: 20vh;
+      margin: 0 auto;
+      margin-bottom: 3vh;
+      border-radius: 50%; }
+  .main .boss_row .twitter__section {
+    background-color: #B97CFF; }
+    .main .boss_row .twitter__section .twitter__title {
+      margin-bottom: 3vh;
+      font-size: 3em;
+      text-align: center; }
+    .main .boss_row .twitter__section .twitter__text {
+      text-align: center;
+      line-height: 2em; }
+    .main .boss_row .twitter__section .image__container .twitter__image {
+      height: 20vh;
+      margin: 0 auto;
+      margin-bottom: 3vh;
+      border-radius: 50%; }
+  .main .boss_row .github__section {
+    background-color: #A55BFF; }
+    .main .boss_row .github__section .github__title {
+      margin-bottom: 3vh;
+      font-size: 3em;
+      text-align: center; }
+    .main .boss_row .github__section .github__text {
+      text-align: center;
+      line-height: 2em; }
+    .main .boss_row .github__section .image__container .github__image {
+      height: 20vh;
+      margin: 0 auto;
+      margin-bottom: 3vh;
+      border-radius: 50%; }
+
+.row {
+  margin-left: auto;
+  margin-right: auto; }
+
+/*# sourceMappingURL=contact.css.map */
