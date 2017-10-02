@@ -8,12 +8,14 @@ body {
   height: 12vh;
   padding: 1vh 0;
   box-sizing: border-box;
-  background-color: #4a148c; }
+  background-color: #260252; }
   .header .header__logo {
     position: absolute;
     float: left;
     margin-left: 5vw;
-    margin-top: 1vh; }
+    margin-top: 0.5vh; }
+  .header .nav .nav__home .active, .header .nav .nav__work .active, .header .nav .nav__about .active, .header .nav .nav__contact .active {
+    color: white !important; }
   .header .nav .nav__home {
     display: inline;
     background-color: #C490FF;
@@ -77,37 +79,69 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
+.clicked {
+  filter: brightness(50%); }
+
 main .boss__row {
   padding: 0;
   height: 44vh;
   box-sizing: border-box;
   background-color: #260252; }
   main .boss__row .first__left, main .boss__row .second__left, main .boss__row .third__left {
+    cursor: pointer;
     border: 2px solid #1D1D1D; }
     main .boss__row .first__left:hover, main .boss__row .second__left:hover, main .boss__row .third__left:hover {
       border: 2px solid white; }
-    main .boss__row .first__left img, main .boss__row .second__left img, main .boss__row .third__left img {
+    main .boss__row .first__left .dark__1 img, main .boss__row .first__left .dark__3 img, main .boss__row .second__left .dark__1 img, main .boss__row .second__left .dark__3 img, main .boss__row .third__left .dark__1 img, main .boss__row .third__left .dark__3 img {
       height: 35.2vh;
       width: 100%; }
-    main .boss__row .first__left .subtitle, main .boss__row .second__left .subtitle, main .boss__row .third__left .subtitle {
+    main .boss__row .first__left .dark__1 .subtitle, main .boss__row .first__left .dark__3 .subtitle, main .boss__row .second__left .dark__1 .subtitle, main .boss__row .second__left .dark__3 .subtitle, main .boss__row .third__left .dark__1 .subtitle, main .boss__row .third__left .dark__3 .subtitle {
       height: 8.8vh;
       text-align: center;
       padding-top: 3vh;
       font-size: 1.3em;
       background-color: #260252; }
   main .boss__row .first__right, main .boss__row .second__right, main .boss__row .third__right {
+    cursor: pointer;
     border: 2px solid #1D1D1D; }
     main .boss__row .first__right:hover, main .boss__row .second__right:hover, main .boss__row .third__right:hover {
       border: 2px solid white; }
-    main .boss__row .first__right img, main .boss__row .second__right img, main .boss__row .third__right img {
+    main .boss__row .first__right .dark__2 img, main .boss__row .first__right .dark__4 img, main .boss__row .second__right .dark__2 img, main .boss__row .second__right .dark__4 img, main .boss__row .third__right .dark__2 img, main .boss__row .third__right .dark__4 img {
       height: 35.2vh;
       width: 100%; }
-    main .boss__row .first__right .subtitle, main .boss__row .second__right .subtitle, main .boss__row .third__right .subtitle {
+    main .boss__row .first__right .dark__2 .subtitle, main .boss__row .first__right .dark__4 .subtitle, main .boss__row .second__right .dark__2 .subtitle, main .boss__row .second__right .dark__4 .subtitle, main .boss__row .third__right .dark__2 .subtitle, main .boss__row .third__right .dark__4 .subtitle {
       height: 8.8vh;
       text-align: center;
       padding-top: 3vh;
       font-size: 1.3em;
       background-color: #260252; }
+
+.options {
+  position: absolute;
+  top: 15vh;
+  width: 100%;
+  color: white;
+  font-size: 1.3em; }
+  .options .options_live {
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 2vh 5vw; }
+    .options .options_live:hover {
+      border-color: #C490FF;
+      color: #C490FF; }
+  .options .options_git {
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 2vh 5vw; }
+    .options .options_git:hover {
+      border-color: #C490FF;
+      color: #C490FF; }
 
 .col-md-6, .col-2 {
   padding: 0px;
