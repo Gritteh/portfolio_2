@@ -111,7 +111,8 @@ body {
 
 } // End of .header // 
 @mixin block() {
-    padding: 4vh 2vw;
+    // padding: 4vh 2vw;
+    padding: 30px 20px;
     width: 50vw;
     height: 44vh;
 }
@@ -130,6 +131,14 @@ body {
     // margin-top: 1vh;
     margin-bottom: 3vh;
     border-radius: 50%;
+}
+@mixin hover() {
+    &:hover {
+        cursor: pointer;
+        padding: 28px 18px;
+        border: 2px solid white;
+        color: white;
+    }
 }
 .main {
     width: 100vw;
@@ -151,8 +160,9 @@ body {
                 font-size: 1em;
             }
         }
-
+        
         .linkedin__section {
+            @include hover();
             background-color: $purple_second;
             .linkedin__title {
                 @include blockTitle();
@@ -171,6 +181,7 @@ body {
         }
 
         .twitter__section {
+            @include hover();
             background-color: $purple_third;
             .twitter__title {
                 @include blockTitle();
@@ -186,6 +197,7 @@ body {
         }
 
         .github__section {
+            @include hover();
             background-color: $purple_fourth;
             .github__title {
                 @include blockTitle();

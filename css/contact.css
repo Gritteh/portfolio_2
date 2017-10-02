@@ -80,7 +80,7 @@ body {
   height: 88vh;
   background-color: #A55BFF; }
   .main .boss_row .email__section, .main .boss_row .linkedin__section, .main .boss_row .twitter__section, .main .boss_row .github__section {
-    padding: 4vh 2vw;
+    padding: 30px 20px;
     width: 50vw;
     height: 44vh; }
   .main .boss_row .email__section {
@@ -95,6 +95,11 @@ body {
       font-size: 1em; }
   .main .boss_row .linkedin__section {
     background-color: #C490FF; }
+    .main .boss_row .linkedin__section:hover {
+      cursor: pointer;
+      padding: 28px 18px;
+      border: 2px solid white;
+      color: white; }
     .main .boss_row .linkedin__section .linkedin__title {
       margin-bottom: 3vh;
       font-size: 3em;
@@ -109,6 +114,11 @@ body {
       border-radius: 50%; }
   .main .boss_row .twitter__section {
     background-color: #B97CFF; }
+    .main .boss_row .twitter__section:hover {
+      cursor: pointer;
+      padding: 28px 18px;
+      border: 2px solid white;
+      color: white; }
     .main .boss_row .twitter__section .twitter__title {
       margin-bottom: 3vh;
       font-size: 3em;
@@ -123,6 +133,11 @@ body {
       border-radius: 50%; }
   .main .boss_row .github__section {
     background-color: #A55BFF; }
+    .main .boss_row .github__section:hover {
+      cursor: pointer;
+      padding: 28px 18px;
+      border: 2px solid white;
+      color: white; }
     .main .boss_row .github__section .github__title {
       margin-bottom: 3vh;
       font-size: 3em;
