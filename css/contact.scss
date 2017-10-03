@@ -179,6 +179,7 @@ body {
 @mixin blockText() {
     text-align: center;
     line-height: 2em;
+    font-size: 1.2em;
 }
 @mixin socialimage() {
     height: 20vh;
@@ -212,7 +213,7 @@ body {
             }
             .email__text {
                 @include blockText();
-                font-size: 1em;
+                font-size: 1.3em;
                 a {
                     text-decoration: none;
                     color: $teal;

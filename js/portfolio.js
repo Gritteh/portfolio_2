@@ -19,9 +19,24 @@ $(document).ready(() => {
         facePic.css({
             marginLeft: contWidth/2 - faceWidth/2 + "px"
         });
-
+        centerIcons(iconArray);
+    
     });
 
+    let iconArray = [$(".right__fork"), $(".left__coffee"), $(".right__mail")];
+
+
+    const centerIcons = array => {
+        array.map((val, i) => {
+            let iconWidth = val.width();
+            let parentWidth = val.parent().width();
+            val.css({
+                marginLeft: parentWidth/2 - iconWidth/2 + "px"
+            });
+        });
+    };
+
+    centerIcons(iconArray);
 
     
 });

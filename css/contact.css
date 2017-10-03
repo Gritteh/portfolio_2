@@ -162,7 +162,8 @@ body {
     .main .boss__row .email__section .email__text {
       text-align: center;
       line-height: 2em;
-      font-size: 1em; }
+      font-size: 1.2em;
+      font-size: 1.3em; }
       .main .boss__row .email__section .email__text a {
         text-decoration: none;
         color: #00796b; }
@@ -181,7 +182,8 @@ body {
       text-align: center; }
     .main .boss__row .linkedin__section .linkedin__text {
       text-align: center;
-      line-height: 2em; }
+      line-height: 2em;
+      font-size: 1.2em; }
     .main .boss__row .linkedin__section .image__container .linkedin__image {
       height: 20vh;
       margin: 0 auto;
@@ -200,7 +202,8 @@ body {
       text-align: center; }
     .main .boss__row .twitter__section .twitter__text {
       text-align: center;
-      line-height: 2em; }
+      line-height: 2em;
+      font-size: 1.2em; }
     .main .boss__row .twitter__section .image__container .twitter__image {
       height: 20vh;
       margin: 0 auto;
@@ -219,7 +222,8 @@ body {
       text-align: center; }
     .main .boss__row .github__section .github__text {
       text-align: center;
-      line-height: 2em; }
+      line-height: 2em;
+      font-size: 1.2em; }
     .main .boss__row .github__section .image__container .github__image {
       height: 20vh;
       margin: 0 auto;
