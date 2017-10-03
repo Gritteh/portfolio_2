@@ -61,9 +61,11 @@ body {
     // Navbar
     
     .nav {
+        margin-top: 1.5vh;
         @media (max-width: 650px) {
             display: none;
         }
+        
         .nav__home, .nav__work, .nav__about, .nav__contact {
             text-decoration: none;
             .active {
@@ -103,7 +105,7 @@ body {
             }
         }
         .nav__contact {
-            margin-right: auto;
+            // margin-right: auto;
             @include navbutton();
             border-right: 2px solid $off_black;
 

@@ -62,15 +62,20 @@ a {
         .top__left {
             @include mainSquare();
             background-color: $purple_lightest;
-            
+            .face__pic {
+                height: 20vh;
+                border-radius: 50%;
+                border: 1px solid black;
+            }
+           
             .name__title {
-                margin-top: 20px;
-                text-align: right;
+                margin-top: 5vh;
+                text-align: center;
                 font-size: 3.5em;
             }
             .name__subtitle {
-                margin-top: 30px;
-                text-align: right;
+                margin-top: 5vh;
+                text-align: center;
                 font-size: 1.5em;
                 
             }
