@@ -115,6 +115,8 @@ body {
     right: 8vw;
     top: 1.5vh;
     color: white; }
+    .header .mobile__nav .mob__icon:hover {
+      cursor: pointer; }
   .header .mobile__nav .mob__links {
     position: absolute;
     right: 8vw;
@@ -130,6 +132,9 @@ body {
       height: 5vh;
       font-size: 1.5em;
       text-align: right; }
+      .header .mobile__nav .mob__links a:hover {
+        color: #00796b;
+        text-decoration: none; }
 
 .row {
   margin-left: auto;
@@ -177,25 +182,38 @@ main .boss__row {
   top: 15vh;
   width: 100%;
   color: white;
-  font-size: 1.3em; }
+  font-size: 1.1em; }
+  .options .options_live, .options .options_git {
+    padding: 2vh 1vw; }
+    @media (max-width: 767px) {
+      .options .options_live, .options .options_git {
+        width: 60vw; } }
   .options .options_live {
     color: white;
     text-align: center;
     border: 2px solid white;
     border-radius: 10px;
-    background-color: transparent;
-    padding: 2vh 5vw; }
+    background-color: transparent; }
     .options .options_live:hover {
       text-decoration: none;
       border-color: #C490FF;
       color: #C490FF; }
+    @media (max-width: 1005px) {
+      .options .options_live {
+        padding-top: 3vh; } }
+    @media (max-width: 819px) {
+      .options .options_live {
+        padding: 2vh 1vw; } }
+    @media (max-width: 767px) {
+      .options .options_live {
+        margin-bottom: 3vh;
+        margin-top: -3vh; } }
   .options .options_git {
     color: white;
     text-align: center;
     border: 2px solid white;
     border-radius: 10px;
-    background-color: transparent;
-    padding: 2vh 5vw; }
+    background-color: transparent; }
     .options .options_git:hover {
       text-decoration: none;
       border-color: #C490FF;

@@ -5,6 +5,7 @@ $purple_second: #C490FF;
 $purple_third: #B97CFF;
 $purple_fourth: #A55BFF;
 $purple_darkest: #260252;
+$teal: #00796b;
 
 
 body {
@@ -132,6 +133,9 @@ body {
             right: 8vw;
             top: 1.5vh;
             color: white;
+            &:hover {
+                cursor: pointer;
+            }
         }
                 
         .mob__links {
@@ -149,8 +153,10 @@ body {
                 height: 5vh;
                 font-size: 1.5em;
                 text-align: right;
-                // border: 1px solid white;
-                
+                &:hover {
+                    color: $teal;
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -254,8 +260,12 @@ main {
     top: 15vh;
     width: 100%;
     color: white;
-    font-size: 1.3em;
+    font-size: 1.1em;
     .options_live, .options_git {
+        padding: 2vh 1vw;
+        @media (max-width: 767px) {
+            width: 60vw;
+        }
     }
     .options_live {
         color: white;
@@ -263,9 +273,19 @@ main {
         border: 2px solid white;
         border-radius: 10px;
         background-color: rgba(0,0,0,0);
-        padding: 2vh 5vw;
+        // padding: 2vh 5vw;
         &:hover {
             @include hoverTurnTeal();
+        }
+        @media (max-width: 1005px) {
+            padding-top: 3vh;
+        }
+        @media (max-width: 819px) {
+            padding: 2vh 1vw;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 3vh;
+            margin-top: -3vh;
         }
     }
     .options_git {
@@ -276,7 +296,7 @@ main {
         border-radius: 10px;
         
         background-color: rgba(0,0,0,0);
-        padding: 2vh 5vw;
+        // padding: 2vh 5vw;
         &:hover {
             @include hoverTurnTeal();
         }

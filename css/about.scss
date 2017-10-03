@@ -5,6 +5,8 @@ $purple_second: #C490FF;
 $purple_third: #B97CFF;
 $purple_fourth: #A55BFF;
 $purple_darkest: #260252;
+$teal: #00796b;
+
 
 .row {
     margin-left: auto;
@@ -140,6 +142,9 @@ body {
             right: 8vw;
             top: 1.5vh;
             color: white;
+            &:hover {
+                cursor: pointer;
+            }
         }
                 
         .mob__links {
@@ -157,7 +162,10 @@ body {
                 height: 5vh;
                 font-size: 1.5em;
                 text-align: right;
-                // border: 1px solid white;
+                &:hover {
+                    color: $teal;
+                    text-decoration: none;
+                }
                 
             }
         }
@@ -221,7 +229,10 @@ body {
                     font-size: 1rem;
                     a {
                         text-decoration: none;
-                        color: #00695c;
+                        color: $teal;
+                        &:hover {
+                            color: white;
+                        }
                     }
                 }
             }

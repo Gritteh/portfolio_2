@@ -130,6 +130,8 @@ body {
     right: 8vw;
     top: 1.5vh;
     color: white; }
+    .header .mobile__nav .mob__icon:hover {
+      cursor: pointer; }
   .header .mobile__nav .mob__links {
     position: absolute;
     right: 8vw;
@@ -145,6 +147,9 @@ body {
       height: 5vh;
       font-size: 1.5em;
       text-align: right; }
+      .header .mobile__nav .mob__links a:hover {
+        color: #00796b;
+        text-decoration: none; }
 
 .main .boss__row .top__row {
   height: 44vh;
@@ -191,6 +196,8 @@ body {
       font-size: 1rem; }
       .main .boss__row .bottom__row .bottom__text p a {
         text-decoration: none;
-        color: #00695c; }
+        color: #00796b; }
+        .main .boss__row .bottom__row .bottom__text p a:hover {
+          color: white; }
 
 /*# sourceMappingURL=about.css.map */

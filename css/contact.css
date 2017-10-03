@@ -124,6 +124,8 @@ body {
     right: 8vw;
     top: 1.5vh;
     color: white; }
+    .header .mobile__nav .mob__icon:hover {
+      cursor: pointer; }
   .header .mobile__nav .mob__links {
     position: absolute;
     right: 8vw;
@@ -139,6 +141,9 @@ body {
       height: 5vh;
       font-size: 1.5em;
       text-align: right; }
+      .header .mobile__nav .mob__links a:hover {
+        color: #00796b;
+        text-decoration: none; }
 
 .main {
   width: 100vw;
@@ -158,6 +163,11 @@ body {
       text-align: center;
       line-height: 2em;
       font-size: 1em; }
+      .main .boss__row .email__section .email__text a {
+        text-decoration: none;
+        color: #00796b; }
+        .main .boss__row .email__section .email__text a:hover {
+          color: white; }
   .main .boss__row .linkedin__section {
     background-color: #C490FF; }
     .main .boss__row .linkedin__section:hover {

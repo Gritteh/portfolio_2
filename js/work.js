@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
     
     const loopToGetDarks = numberOfBlocks => {
         let arrayOfDarks = [];
@@ -102,7 +101,6 @@ $(document).ready(function() {
         }
         
     };
-
 
     
 });
