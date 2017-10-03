@@ -32,7 +32,7 @@ $(document).ready(function() {
         });
     };
     arrayOfDarks.map((val, i) => {
-        val.on("click", function() {
+        val.on("mouseover", function() {
             removeGreyFromOthers(arrayOfDarks);
             val.addClass("clicked");
             ////
