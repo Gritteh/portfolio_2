@@ -231,9 +231,17 @@ body {
                 @media (max-width: 729px) {
                     line-height: 4vh;
                 }
+                @media (max-width: 425px) {
+                    font-size: 1em;
+                    line-height: 3vh;
+                }
                 p {
                     margin-top: 3vh;
                     font-size: 1rem;
+                    @media (max-width: 425px) {
+                        margin-top: 5vh;
+                        font-size: 0.9rem;
+                    }
                     a {
                         text-decoration: none;
                         color: $teal;

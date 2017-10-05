@@ -194,9 +194,17 @@ body {
     @media (max-width: 729px) {
       .main .boss__row .bottom__row .bottom__text {
         line-height: 4vh; } }
+    @media (max-width: 425px) {
+      .main .boss__row .bottom__row .bottom__text {
+        font-size: 1em;
+        line-height: 3vh; } }
     .main .boss__row .bottom__row .bottom__text p {
       margin-top: 3vh;
       font-size: 1rem; }
+      @media (max-width: 425px) {
+        .main .boss__row .bottom__row .bottom__text p {
+          margin-top: 5vh;
+          font-size: 0.9rem; } }
       .main .boss__row .bottom__row .bottom__text p a {
         text-decoration: none;
         color: #00796b; }
