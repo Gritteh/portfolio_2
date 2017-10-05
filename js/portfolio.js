@@ -46,7 +46,7 @@ $(document).ready(() => {
                 let iconWidth = val.width();
                 let parentWidth = val.parent().width();
                 val.css({
-                    marginLeft: parentWidth/2 - iconWidth/2 - 10 + "px"
+                    marginLeft: parentWidth/2 - iconWidth/2 + "px"
                 });
             });
         }   
