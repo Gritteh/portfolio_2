@@ -171,11 +171,14 @@ body {
           height: 23vh; } }
       @media (max-width: 580px) {
         .main .boss__row .top__row .image__container .top__image {
-          height: 20vh; } }
+          display: none; } }
   .main .boss__row .top__row .top__title {
     padding: 4vh 3vw;
     margin-top: 4vh;
     font-size: 3em; }
+    @media (max-width: 580px) {
+      .main .boss__row .top__row .top__title {
+        text-align: center; } }
     .main .boss__row .top__row .top__title p {
       margin-top: 5vh;
       font-size: 1.5rem; }
